@@ -1,0 +1,3 @@
+2026-05-18 08:52:20,469 | INFO | Pipeline started
+2026-05-18 08:52:20,569 | INFO | Loaded raw claims rows=5000 providers rows=60
+2026-05-18 08:52:20,759 | INFO | Pipeline completed successfully

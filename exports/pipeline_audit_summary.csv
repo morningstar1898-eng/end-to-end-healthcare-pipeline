@@ -1,0 +1,2 @@
+run_started_at,run_completed_at,raw_claim_rows,clean_claim_rows,provider_rows,dashboard_extract_rows,status
+2026-05-18 08:52:20.471651,2026-05-18 08:52:20.751110,5000,5000,60,1110,success
