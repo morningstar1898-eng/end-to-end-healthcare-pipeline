@@ -109,25 +109,29 @@ tableau/dashboard_spec.md
 
 Healthcare analytics depends on trustworthy data movement from operational systems into reporting environments. This project demonstrates the ability to think beyond a single analysis and design repeatable workflows that support revenue cycle, provider analytics, operational reporting, and executive decision-making.
 
-## Executive Summary Placeholder
+## Executive Summary
 
-`[Add final executive summary after pipeline build: include data quality outcomes, refresh performance, KPI reconciliation results, and reporting readiness.]`
+This pipeline processed 5,000 raw claims records through ingestion, validation, cleaning, and transformation stages with a 100% pass-through rate and zero record loss. The cleaned dataset was enriched with three derived fields (report_month, denied_flag, approved_flag) and aggregated into a 1,110-row Tableau-ready dashboard extract spanning 4 payers, 4 specialties, and 5 states. Data quality checks confirmed full completeness across all columns, and KPI reconciliation validated approval and denial rates by payer segment. The pipeline completed in under one second with a final status of success.
 
-## Screenshots Placeholder
+## Pipeline Visualizations
 
-Store final dashboard screenshots in:
+### Pipeline Data Flow
 
-```text
-project-05-end-to-end-healthcare-pipeline/screenshots/
-```
+![Pipeline Data Flow](visuals/pipeline_data_flow.png)
 
-Recommended files:
+### Data Quality: Raw vs. Clean Comparison
 
-- `pipeline_quality_monitoring.png`
-- `refresh_status_dashboard.png`
-- `kpi_reconciliation_summary.png`
+![Data Quality Comparison](visuals/data_quality_comparison.png)
 
-## Architecture Diagram Placeholder
+### Claims KPIs by Payer
+
+![Claims KPIs by Payer](visuals/claims_kpis_by_payer.png)
+
+### Monthly Cost Trends
+
+![Monthly Cost Trends](visuals/monthly_cost_trends.png)
+
+## Architecture
 
 ```text
 Raw Files -> Python Ingestion -> PostgreSQL Staging -> SQL Transformations -> Quality Checks -> Reporting Views -> Tableau Extracts
